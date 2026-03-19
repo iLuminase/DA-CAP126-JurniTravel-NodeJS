@@ -1,4 +1,5 @@
 import { defineConfig } from 'vite';
+import { fileURLToPath, URL } from 'node:url';
 
 export default defineConfig(async () => {
   let reactPlugin = null;
@@ -10,6 +11,11 @@ export default defineConfig(async () => {
   }
   return {
     plugins: reactPlugin ? [reactPlugin()] : [],
+    resolve: {
+      alias: {
+        '@clerk/clerk-react': fileURLToPath(new URL('./src/lib/clerkShim.jsx', import.meta.url)),
+      },
+    },
     server: { port: 5173 }
   };
 });
