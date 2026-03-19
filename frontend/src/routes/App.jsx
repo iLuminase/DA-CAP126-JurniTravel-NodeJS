@@ -1,32 +1,32 @@
-import React, { useEffect, useState } from 'react';
-import { Routes, Route, Link, useLocation } from 'react-router-dom';
-import HomePage from '../pages/HomePage.jsx';
-import HotelsPage from '../pages/HotelsPage.jsx';
-import HotelDetail from '../pages/HotelDetail.jsx';
-import FlightsPage from '../pages/FlightsPage.jsx';
-import CarsPage from '../pages/CarsPage.jsx';
+import { useEffect, useState } from 'react';
+import { Link, Route, Routes, useLocation } from 'react-router-dom';
+import ChatWidget from '../components/ChatWidget.jsx';
+import AboutPage from '../pages/AboutPage.jsx';
 import ActivitiesPage from '../pages/ActivitiesPage.jsx';
-import VouchersPage from '../pages/VouchersPage.jsx';
-import FavoritesPage from '../pages/FavoritesPage.jsx';
-import NotificationsPage from '../pages/NotificationsPage.jsx';
 import AdminDashboard from '../pages/AdminDashboard.jsx';
+import CarsPage from '../pages/CarsPage.jsx';
+import FavoritesPage from '../pages/FavoritesPage.jsx';
+import FlightIdeasPage from '../pages/FlightIdeasPage.jsx';
+import FlightsPage from '../pages/FlightsPage.jsx';
+import HomePage from '../pages/HomePage.jsx';
+import HotelDetail from '../pages/HotelDetail.jsx';
+import HotelsPage from '../pages/HotelsPage.jsx';
+import JobApplicationPage from '../pages/JobApplicationPage.jsx';
+import NotificationsPage from '../pages/NotificationsPage.jsx';
+import PaymentPage from '../pages/PaymentPage.jsx';
+import PriceAlertPage from '../pages/PriceAlertPage.jsx';
+import PromotionsPage from '../pages/PromotionsPage.jsx';
+import ServicesPage from '../pages/ServicesPage.jsx';
 import SignInPage from '../pages/SignInPage.jsx';
 import SignUpPage from '../pages/SignUpPage.jsx';
-import VerifyEmailPage from '../pages/VerifyEmailPage.jsx';
-import PaymentPage from '../pages/PaymentPage.jsx';
-import AboutPage from '../pages/AboutPage.jsx';
 import SupportPage from '../pages/SupportPage.jsx';
 import TermsPage from '../pages/TermsPage.jsx';
-import ServicesPage from '../pages/ServicesPage.jsx';
-import PriceAlertPage from '../pages/PriceAlertPage.jsx';
-import FlightIdeasPage from '../pages/FlightIdeasPage.jsx';
-import PromotionsPage from '../pages/PromotionsPage.jsx';
-import JobApplicationPage from '../pages/JobApplicationPage.jsx';
-import ChatWidget from '../components/ChatWidget.jsx';
+import VerifyEmailPage from '../pages/VerifyEmailPage.jsx';
+import VouchersPage from '../pages/VouchersPage.jsx';
 
-import TeamPage from '../pages/TeamPage.jsx';
 import BookingsPage from '../pages/BookingsPage.jsx';
 import CareersPage from '../pages/CareersPage.jsx';
+import TeamPage from '../pages/TeamPage.jsx';
 
 const NavUserSection = () => {
   return (
